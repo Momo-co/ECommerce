@@ -25,10 +25,18 @@
                                     <segue destination="i3i-dd-4bn" kind="show" id="0B9-Xh-Ay8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-ck-9y5">
+                                <rect key="frame" x="10" y="327" width="394" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="vg9-ck-9y5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="239" id="AUc-Qz-uqb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vg9-ck-9y5" secondAttribute="trailing" constant="10" id="b7e-5e-Me3"/>
+                            <constraint firstItem="vg9-ck-9y5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="bPL-9T-7KD"/>
                             <constraint firstItem="UTI-Ko-NPb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="sLM-5L-ID9"/>
                             <constraint firstItem="UTI-Ko-NPb" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="tsX-OS-iKj"/>
                         </constraints>
