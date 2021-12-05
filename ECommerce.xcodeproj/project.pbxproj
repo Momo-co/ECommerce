@@ -17,6 +17,8 @@
 		08686144275CCDF500B51A21 /* ECommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08686143275CCDF500B51A21 /* ECommerceTests.swift */; };
 		0868614E275CCDF500B51A21 /* ECommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868614D275CCDF500B51A21 /* ECommerceUITests.swift */; };
 		08686150275CCDF500B51A21 /* ECommerceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868614F275CCDF500B51A21 /* ECommerceUITestsLaunchTests.swift */; };
+		0868615D275CCE6E00B51A21 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0868615C275CCE6E00B51A21 /* Login.storyboard */; };
+		08686163275CE66300B51A21 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08686162275CE66300B51A21 /* LogInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		08686149275CCDF500B51A21 /* ECommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0868614D275CCDF500B51A21 /* ECommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceUITests.swift; sourceTree = "<group>"; };
 		0868614F275CCDF500B51A21 /* ECommerceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0868615C275CCE6E00B51A21 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		08686160275CE66200B51A21 /* ECommerce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECommerce-Bridging-Header.h"; sourceTree = "<group>"; };
+		08686161275CE66300B51A21 /* LogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		08686162275CE66300B51A21 /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 				08686137275CCDF500B51A21 /* LaunchScreen.storyboard */,
 				0868613A275CCDF500B51A21 /* Info.plist */,
 				08686132275CCDF200B51A21 /* ECommerce.xcdatamodeld */,
+				0868615C275CCE6E00B51A21 /* Login.storyboard */,
+				08686161275CE66300B51A21 /* LogInViewController.h */,
+				08686162275CE66300B51A21 /* LogInViewController.m */,
+				08686160275CE66200B51A21 /* ECommerce-Bridging-Header.h */,
 			);
 			path = ECommerce;
 			sourceTree = "<group>";
@@ -198,6 +208,7 @@
 				TargetAttributes = {
 					08686125275CCDF200B51A21 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					0868613E275CCDF500B51A21 = {
 						CreatedOnToolsVersion = 13.1;
@@ -234,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0868615D275CCE6E00B51A21 /* Login.storyboard in Resources */,
 				08686139275CCDF500B51A21 /* LaunchScreen.storyboard in Resources */,
 				08686136275CCDF500B51A21 /* Assets.xcassets in Resources */,
 				08686131275CCDF200B51A21 /* Main.storyboard in Resources */,
@@ -263,6 +275,7 @@
 			files = (
 				0868612E275CCDF200B51A21 /* ViewController.swift in Sources */,
 				0868612A275CCDF200B51A21 /* AppDelegate.swift in Sources */,
+				08686163275CE66300B51A21 /* LogInViewController.m in Sources */,
 				08686134275CCDF200B51A21 /* ECommerce.xcdatamodeld in Sources */,
 				0868612C275CCDF200B51A21 /* SceneDelegate.swift in Sources */,
 			);
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74V987C9XK;
@@ -459,6 +473,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TAE.ECommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ECommerce/ECommerce-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74V987C9XK;
@@ -487,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TAE.ECommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ECommerce/ECommerce-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
